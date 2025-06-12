@@ -53,7 +53,7 @@ function displaySongs(filteredSongs) {
   filteredSongs.forEach(song => {
     const div = document.createElement("div");
     div.classList.add("song-item");
-    div.textContent = `${song.title} – ${song.artist}`;
+    div.textContent = `${song.title.toLowerCase()} – ${song.artist}`;
     div.addEventListener("click", () => playSong(song));
     playlist.appendChild(div);
   });
