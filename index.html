@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.jpeg" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icon.jpeg" class="logo" alt="Logo" />
+      <h1>MySpotify Clone</h1>
+    </header>
+
+    <main>
+      <div id="current-song">
+        <img src="cover1.jpeg" id="cover" alt="Cover Image" />
+        <h2 id="song-title">Select a Song</h2>
+        <p id="song-artist">Artist</p>
+        <audio id="audio" controls></audio>
+        <div class="gif-container" id="gifContainer" style="display: none;">
+          <img src="playingGif.webp" alt="Now Playing" />
+        </div>
+      </div>
+
+      <input type="text" id="searchInput" placeholder="Search songs or artists..." />
+      <div class="playlist" id="playlist"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Spotify Clone</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
